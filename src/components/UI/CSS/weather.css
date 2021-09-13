@@ -1,0 +1,30 @@
+.main__weather{
+    margin: 50px 0;
+}
+
+@media only screen and (max-width: 1024px){
+    .main__weather{
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .main__weather{
+        padding: 0;
+    }
+    .main__weather > div> div>div:nth-child(2) > svg
+    {
+        width: 50px;
+    }
+    .main__weather > div > div:nth-child(2){
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
+    .main__weather > div > div:nth-child(2) > div{
+        width: 35%;
+        border: solid 1px var(--primary-color-25);
+        margin:  15px 0;
+        padding: 15px;
+        border-radius: 15px;
+    }
+}

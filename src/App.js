@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/header';
+import Topbanner from './components/TopBanner/Topbanner';
+import Weather from './components/WeatherAPI/weatherapi'
+import React, { useState } from 'react';
+import Searchv2 from './components/StateSearchfilter/serchfilterv2';
+import Footer from './components/footer/footer';
+
 
 function App() {
+  const [quierdCity, setquierdCity] = useState('')
+  const [quiredlng,setquiredlng]=useState('')
+  const [quiredlat,setquiredlat] = useState('')
+
+  const onSearchHandler = (search_city, lng,lat) => {
+    setquierdCity(search_city)
+    setquiredlng(lng)
+    setquiredlat(lat);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Topbanner />
+      <Searchv2 OnSearch={onSearchHandler} />
+      <Weather citylabel={quierdCity} lng={quiredlng} lat={quiredlat}/>
+      <Footer/>
     </div>
   );
 }

@@ -1,0 +1,42 @@
+/* open sans 
+   for paragrap and anchors
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+p,a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-size: 48.38px;
+}
+
+h2{
+    font-size: 39.06px;
+}
+
+h3{
+    font-size: 31.25px;
+}
+
+h4{
+    font-size: 25.00;
+}
+
+h5{
+    font-size: 20.00px;
+}
+h6{
+    font-size: 16.00px;
+}
+p{
+    font-size: 16px;
+}
+a{
+    font-size: 16px;
+    text-decoration: none;
+}

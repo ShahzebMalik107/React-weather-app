@@ -1,0 +1,16 @@
+@import url('./topbanner.css');
+@import url('./font.css');
+@import url('./root.css');
+@import url('./weather.css');
+@import url('./searchFilter.css');
+@import url('./header.css');
+@import url('./footer.css');
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+}

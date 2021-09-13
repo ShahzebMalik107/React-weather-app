@@ -1,0 +1,34 @@
+.Search_filter{
+    text-align: center;
+    margin: 50px 0;
+}
+.Search_filter > form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.Search_filter > form > label{
+    flex-basis: 100%;
+    padding: 25px;
+}
+.Search_filter > form > input{
+    padding: 25px;
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+    flex-basis: 25%;
+}
+.Search_filter > form > input:focus{
+    outline: none;
+}
+.Search_filter > form > input[type=submit]{
+    border-radius: 0 50px 050px 0;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+    flex-basis: 10%;
+}
+#city{
+    border-radius: 50px 0 0 50px;
+}
